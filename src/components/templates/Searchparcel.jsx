@@ -12,15 +12,7 @@ export default function Searchparcel({match, information}) {
      const results = information.filter((item) => item.parcel_id.match(query));
   console.log("Query",query);
     console.log("results",results);
-   const { 
-        status, 
-        eta, 
-        parcel_id, 
-        user_name, 
-        user_phone,
-        sender, 
-        location_name,
-        notes } = results;
+   
 
         return (
          <article className="Parceldetaillist">

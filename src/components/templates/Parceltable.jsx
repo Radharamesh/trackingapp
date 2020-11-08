@@ -1,17 +1,6 @@
 import React from "react";
 
 export default function Parceltable({information}) {
-    const { 
-      id, 
-      status, 
-      eta, 
-      parcel_id, 
-      user_name, 
-      user_phone,
-      sender, 
-      location_name,
-      notes } = information;
-  
 
      console.log("parcelpage");
      function rendertableheader() {

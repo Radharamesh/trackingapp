@@ -1,20 +1,7 @@
 import React from "react";
 
 export default function Parcelpage({information}) {
-    const { 
-      id, 
-      status, 
-      eta, 
-      parcel_id, 
-      user_name, 
-      user_phone,
-      sender, 
-      location_name,
-      notes } = information;
   
-
-     console.log("parcelpage");
-
 return (
       <div className="parcellist">
         <ul>
