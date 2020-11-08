@@ -35,7 +35,7 @@ export default function Parcelspage({information}) {
                   <h1>Your Parcels</h1>
                   <div>{Parcellist}</div>
                 </div> */
-       
+        
        <div className="grid">
        <article className="parcels">
        <h3 className="heading">Parcel ID</h3>

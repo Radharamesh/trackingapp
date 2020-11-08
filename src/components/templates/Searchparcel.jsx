@@ -1,15 +1,18 @@
 import React from "react";
 
 export default function Searchparcel({match, information}) {
+
+  
     console.log("search page");
-    console.log("Match",match.params.id);
+    console.log("Match",match.params.query);
     console.log(information);
 
-    const parcelid = match.params.id;
+    const query = new RegExp(match.params.query, "i");
 
-     const parcel = information.filter((Object) => Object.id===parcelid);
-    console.log(parcel);
-   /*  const { 
+     const results = information.filter((item) => item.parcel_id.match(query));
+  console.log("Query",query);
+    console.log("results",results);
+   const { 
         status, 
         eta, 
         parcel_id, 
@@ -17,32 +20,22 @@ export default function Searchparcel({match, information}) {
         user_phone,
         sender, 
         location_name,
-        notes } = information[parcelid]; */
+        notes } = results;
 
         return (
          <article>
-  {/*        <h3>
-                <span>#{parcelid} </span>
-                {user_name}
-                </h3>
-              <p>Parcel id: {parcel_id}</p>
-              <p>Parcel Status: {status}</p>
-              <p>Estimated Time of Arrival: {eta}</p>
-              <p>Pickup Location: {location_name}</p>  */}
+           <div>
+            {results.map(item => (<p key={item.id}>Parcel id: {item.parcel_id}</p>))}
+            {results.map(item => (<p key={item.id}>Estimated Time of Arrival: {item.eta}</p>))}
+            {results.map(item => (<p key={item.id}>Parcel Status: {item.status}</p>))}
+            {results.map(item => (<p key={item.id}>Location_name: {item.location_name}</p>))}
+            {results.map(item => (<p key={item.id}>Sender: {item.sender}</p>))}
+            {results.map(item => (<p key={item.id}>Parcel Notes: {item.notes}</p>))}
+            {results.map(item => (<p key={item.id}>User Name: {item.user_name}</p>))}
+            {results.map(item => (<p key={item.id}>User Phoneno: {item.user_phone}</p>))}
+           </div>
+             
 
-{/*                 <h3>
-                <span>#{id} </span>
-                {user_name}
-                </h3>
-                <p>Status :{status}</p>
- */}
-{/*                       {information.map(item=>(
-                                      <AllParcel id={item.id} 
-                                      parcel_id={item.parcel_id} 
-                                      status={item.status}/>))}
-                      
-                      orders.map(item => <li key={item.id}>{item}</li>
- */}      <p>searchpage</p>
             </article>
           );
 }

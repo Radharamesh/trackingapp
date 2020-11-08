@@ -7,14 +7,17 @@ header{
     color: darkmagenta;
 }
 
-h3 {
+h5 {
+  
     padding-left: 8px;
 }
 .header-links {
-    width: 80%;
+    
+    
+    width: 90%;
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: flex-start;   
     list-style: none;
     color: red;
     font-size: small;

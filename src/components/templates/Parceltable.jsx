@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Parcelex({information}) {
+export default function Parceltable({information}) {
     const { 
       id, 
       status, 
@@ -16,7 +16,7 @@ export default function Parcelex({information}) {
      console.log("parcelpage");
      function rendertableheader() {
         return (
-            <thead>
+            <thead className="tblheader">
             <tr>
                         
                         <th>Parcel_ID</th>
@@ -30,7 +30,7 @@ export default function Parcelex({information}) {
     }
      function rendertablerows() {
          return information.map(item => {
-                return <tbody>
+                return (<tbody className="tblbody">
                     <tr key={item.id}>
 
                     <td>{item.parcel_id}</td>
@@ -38,7 +38,7 @@ export default function Parcelex({information}) {
                     <td>{item.eta}</td>
                     <td>{item.location_name}</td>
                 </tr>
-                </tbody>
+                </tbody>)
          })
      } 
 
@@ -107,7 +107,10 @@ return (
 <div className="parcellist">
     
     {rendertableheader()}
+    
+    
 {rendertablerows()}
+
 </div>
 );
   }

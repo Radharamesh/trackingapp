@@ -5,7 +5,7 @@ import Aboutpage from "./components/templates/Aboutpage";
 import Parcelpage from "./components/templates/Parcelpage";
 import Parcelspage from "./components/templates/Parcelspage";
 import Searchparcel from "./components/templates/Searchparcel";
-import Parcelex from "./components/templates/Parcelex";
+import Parceltable from "./components/templates/Parceltable";
 import Contactpage from "./components/templates/Contactpage";
 import Footer from "./components/organisms/Footer";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
@@ -52,7 +52,9 @@ export default function App() {
       <Switch>
         <Route path = "/" 
         exact 
-        component={Homepage}
+        render={() => (
+          <Homepage information={information}/>
+    )}
        />
         <Route 
         path="/about" 
@@ -66,6 +68,12 @@ export default function App() {
           <Route 
         path="/contact" 
         component={Contactpage}/>
+        <Route 
+        path = "/search-page/:query"
+        render={({match}) => (
+              <Searchparcel match={match} information={information}/>
+        )} 
+         />
          
       </Switch>
       <Footer/>

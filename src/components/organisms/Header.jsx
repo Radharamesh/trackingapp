@@ -6,9 +6,12 @@ import {Link} from "react-router-dom";
 export default function Header() {
     return (
         <header>
-<h3>ABC PARCELS</h3>
+<h5>ABC PARCELS</h5>
 
             <ul className = "header-links">
+            <Link to="/">
+                <li>Home</li>
+                </Link>
               <Link to="/about">
                 <li>About</li>
                 </Link>
