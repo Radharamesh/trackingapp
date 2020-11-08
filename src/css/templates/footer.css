@@ -1,13 +1,12 @@
 footer {
-    margin-top: 40%;
-    padding-bottom: 8px;
-    background-color: lightgoldenrodyellow;
+  margin-top: 40%;
+  padding-bottom: 8px;
+  background-color: lightgoldenrodyellow;
 }
 
-.contact-list  {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none; 
-
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }

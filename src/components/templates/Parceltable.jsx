@@ -1,35 +1,33 @@
 import React from "react";
 
-export default function Parceltable({information}) {
-
-     console.log("parcelpage");
-     function rendertableheader() {
-        return (
-            <thead className="tblheader">
-            <tr>
-                        
-                        <th>Parcel_ID</th>
-                        <th>Status</th>
-                        <th>ETA</th>
-                        <th>Location</th>
-                    </tr>
-        </thead>
-            
-        )
-    }
-     function rendertablerows() {
-         return information.map(item => {
-                return (<tbody className="tblbody">
-                    <tr key={item.id}>
-
-                    <td>{item.parcel_id}</td>
-                    <td>{item.status}</td>
-                    <td>{item.eta}</td>
-                    <td>{item.location_name}</td>
-                </tr>
-                </tbody>)
-         })
-     } 
+export default function Parceltable({ information }) {
+  console.log("parcelpage");
+  function rendertableheader() {
+    return (
+      <thead className="tblheader">
+        <tr>
+          <th>Parcel_ID</th>
+          <th>Status</th>
+          <th>ETA</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+    );
+  }
+  function rendertablerows() {
+    return information.map((item) => {
+      return (
+        <tbody className="tblbody">
+          <tr key={item.id}>
+            <td>{item.parcel_id}</td>
+            <td>{item.status}</td>
+            <td>{item.eta}</td>
+            <td>{item.location_name}</td>
+          </tr>
+        </tbody>
+      );
+    });
+  }
 
   /*    function rendertablerowsid() {
         return information.map(item => {
@@ -72,8 +70,8 @@ export default function Parceltable({information}) {
         })
     }
  */
-return (
-  /*     <div className="parcellist">
+  return (
+    /*     <div className="parcellist">
           <article>
           <h3>Parcel-ID</h3>
           {rendertablerowsid()}
@@ -93,13 +91,10 @@ return (
         </div> 
       );
  */
-<div className="parcellist">
-    
-    {rendertableheader()}
-    
-    
-{rendertablerows()}
+    <div className="parcellist">
+      {rendertableheader()}
 
-</div>
-);
-  }
+      {rendertablerows()}
+    </div>
+  );
+}

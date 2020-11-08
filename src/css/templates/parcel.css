@@ -1,36 +1,33 @@
 .grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border: 1px solid black;  
-    padding-right: 4px;  
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  border: 1px solid black;
+  padding-right: 4px;
 }
 
 .parcellist li {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .tblbody {
-    padding-left: 4px;
-    font-size: small;
-    
-    }
+  padding-left: 4px;
+  font-size: small;
+}
 
 .tblheader {
-    
-    padding-top: 8px;
-    font-size: small;
+  padding-top: 8px;
+  font-size: small;
 }
 
 .tblbody td {
-    column-gap: 2px;
+  column-gap: 2px;
 }
 .parcels {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 /* .parcellist{
     display: grid;
     grid-template-columns: auto auto auto auto;
 } */
-
