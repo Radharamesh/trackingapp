@@ -23,16 +23,18 @@ export default function Searchparcel({match, information}) {
         notes } = results;
 
         return (
-         <article>
+         <article className="Parceldetaillist">
            <div>
+             <h3>Your Parcel Details</h3>
+            {results.map(item => (<p key={item.id}>User Name: {item.user_name}</p>))}
+            {results.map(item => (<p key={item.id}>User Phoneno: {item.user_phone}</p>))}
             {results.map(item => (<p key={item.id}>Parcel id: {item.parcel_id}</p>))}
             {results.map(item => (<p key={item.id}>Estimated Time of Arrival: {item.eta}</p>))}
             {results.map(item => (<p key={item.id}>Parcel Status: {item.status}</p>))}
             {results.map(item => (<p key={item.id}>Location_name: {item.location_name}</p>))}
             {results.map(item => (<p key={item.id}>Sender: {item.sender}</p>))}
             {results.map(item => (<p key={item.id}>Parcel Notes: {item.notes}</p>))}
-            {results.map(item => (<p key={item.id}>User Name: {item.user_name}</p>))}
-            {results.map(item => (<p key={item.id}>User Phoneno: {item.user_phone}</p>))}
+            
            </div>
              
 

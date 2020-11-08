@@ -16,8 +16,9 @@ export default function Homepage({information}) {
         const [query, setQuery] = useState("");
   console.log("Parcel info", information);
     return (
-        <div>
-            {/* <h3>Welcome {information[0].user_name}</h3> */}
+        <div className="Homepage">
+            
+             {/* <h3>Welcome {information[0].user_name}</h3>  */}
         <h3>Welcome to ABC Tracking App</h3>
         <p>To display all of your parcels go to Parcels page</p>
         <p>To display details about particular Parcel Ener Parcel-id below and Click Parcel Details</p>
