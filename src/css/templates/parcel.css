@@ -1,0 +1,20 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: 1px solid black;    
+}
+
+.parcellist li {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.parcels {
+    border: 1px solid black;
+}
+/* .parcellist{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+} */
+

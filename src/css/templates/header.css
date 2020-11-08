@@ -3,15 +3,26 @@ header{
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background-color: blue;
-    color: white;
+    background-color: gray;
+    color: darkmagenta;
 }
 
+h3 {
+    padding-left: 8px;
+}
 .header-links {
-    width: 40%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;    
     list-style: none;
-    
+    color: red;
+    font-size: small;
 }
+
+@media (min-width: 550px) {
+    .header-links{
+        font-size: medium;
+    }
+}
+

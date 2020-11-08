@@ -1,0 +1,13 @@
+.App {
+    background-color: pink;
+    font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 550px) {
+   .App {
+    max-width: calc(
+        2 * 320px + 16px
+      );
+      margin: 0 auto;
+   }
+}
