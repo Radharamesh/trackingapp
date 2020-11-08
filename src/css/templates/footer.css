@@ -1,6 +1,7 @@
 footer {
     margin-top: 40%;
     padding-bottom: 8px;
+    background-color: lightgoldenrodyellow;
 }
 
 .contact-list  {
@@ -8,4 +9,5 @@ footer {
     justify-content: space-around;
     align-items: center;
     list-style: none; 
+
 }

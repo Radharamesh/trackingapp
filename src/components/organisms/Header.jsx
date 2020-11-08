@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 export default function Header() {
     return (
         <header>
+           <img src ="c231a3f4-dccc-4f98-9e1f-c44b912c8b91_200x200.png" alt="app logo" height="50px" width="50px"/> 
 <h5>ABC PARCELS</h5>
 
             <ul className = "header-links">
