@@ -12,9 +12,24 @@
 
 ## User Manual:
 
-This is the Welcome page of the App.
+1. This is the Welcome page of the App.
+
+<img src = "Docs/Screenshot 2020-11-08 at 17.03.12.png" width = "500">
 
 
+- Go to Parcel page, if you want to see all the parcels.
+2. This is the Parcels page.
+<img src = "Docs/Screenshot 2020-11-08 at 17.04.18.png" width = "500">
 
+- Enter Parcel id, if you want to see details of that particular parcel. 
+<img src = "Docs/Screenshot 2020-11-08 at 17.03.42.png" width = "500">
 
+3. This is the Parcel details page.
+<img src = "Docs/Screenshot 2020-11-08 at 17.03.55.png" width = "500">
 
+4. This is the About page of the App.
+
+<img src = "Docs/Screenshot 2020-11-08 at 17.04.08.png" width = "500">
+
+5. This is the Contact page of the App.
+<img src = "Docs/Screenshot 2020-11-08 at 17.04.26.png" width = "500">
