@@ -3,3 +3,9 @@ footer {
     padding-bottom: 8px;
 }
 
+.contact-list  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none; 
+}

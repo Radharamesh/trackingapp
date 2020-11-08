@@ -11,10 +11,6 @@ import Footer from "./components/organisms/Footer";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"; 
 import "./css/style.css";
 
-// FontAwesome
-<script
-src="https://kit.fontawesome.com/86134dd369.js"
-crossorigin="anonymous"></script>
 
 
 
