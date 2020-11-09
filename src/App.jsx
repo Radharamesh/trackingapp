@@ -3,6 +3,7 @@ import Header from "./components/organisms/Header";
 import Homepage from "./components/templates/Homepage";
 import Aboutpage from "./components/templates/Aboutpage";
 import Parcelspage from "./components/templates/Parcelspage";
+import Parceltable from "./components/templates/Parceltable";
 import Searchparcel from "./components/templates/Searchparcel";
 import Contactpage from "./components/templates/Contactpage";
 import Footer from "./components/organisms/Footer";
@@ -47,7 +48,7 @@ export default function App() {
           <Route path="/about" component={Aboutpage} />
           <Route
             path="/parcels"
-            render={() => <Parcelspage information={information} />}
+            render={() => <Parceltable information={information} />}
           />
           <Route path="/contact" component={Contactpage} />
           <Route
