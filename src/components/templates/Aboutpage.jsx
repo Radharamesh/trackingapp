@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div className="about-sec">
       <p>
         When Jebastian, John and Monica founded ABC PARCELS in 1969, they didn’t
         know they would revolutionize the world of logistics. Today, ABC PARCELS

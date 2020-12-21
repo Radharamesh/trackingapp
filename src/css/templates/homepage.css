@@ -1,3 +1,17 @@
 .Homepage {
   margin-left: 8px;
+  height: 350px;
+  
+}
+
+.home-search-sec {
+  margin-top: 10px;
+}
+.home-search-sec input {
+  margin-right: 10px;
+}
+@media (min-width: 550px) {
+  .Homepage{
+text-align: center;
+  }
 }

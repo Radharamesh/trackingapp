@@ -11,6 +11,9 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.parcellist {
+  height: 350px;
+}
 /* .tblbody {
   padding-left: 4px;
   font-size: small;

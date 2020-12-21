@@ -9,6 +9,7 @@ import Contactpage from "./components/templates/Contactpage";
 import Footer from "./components/organisms/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./css/style.css";
+import fakeData from "./fakeDB.json";
 
 export default function App() {
   const [status, setStatus] = useState(0);
@@ -25,6 +26,7 @@ export default function App() {
         setInformation(data);
         setStatus(1);
       } catch {
+        setInformation(fakeData);
         setStatus(2);
       }
     };
@@ -58,7 +60,7 @@ export default function App() {
             )}
           />
         </Switch>
-        {status === 2 ? <p>Sorry we cannot find data</p> : null}
+        {/* {status === 2 ? <p>Sorry we cannot find data</p> : null} */}
         <Footer />
       </div>
     </Router>

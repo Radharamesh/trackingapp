@@ -25,7 +25,7 @@ export default function Searchparcel({ match, information }) {
           <p key={item.id}>Parcel id: {item.parcel_id}</p>
         ))}
         {results.map((item) => (
-          <p key={item.id}>Estimated Time of Arrival: {item.eta}</p>
+          <p key={item.id}>Estimated Time of Arrival: {item.eta.substr(0,10)}</p>
         ))}
         {results.map((item) => (
           <p key={item.id}>Parcel Status: {item.status}</p>

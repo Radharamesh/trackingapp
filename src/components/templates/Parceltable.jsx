@@ -24,7 +24,7 @@ export default function Parceltable({ information }) {
             <tr className="rows" key={item.id}>
               <td>{item.parcel_id}</td>
               <td>{item.status}</td>
-              <td>{item.eta}</td>
+              <td>{item.eta.substr(0,10)}</td>
               <td>{item.location_name}</td>
             </tr>
           </tbody>
