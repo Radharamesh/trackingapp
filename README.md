@@ -1,35 +1,15 @@
 # Project Description
 
-## This is a simple package tracking app displays a list orders (or parcels) with order details such as Parcel id, Parcel status, Estimated Time of Arrival, Pickup location, Parcel Notes, Sender etc., to User.
+## This is a simple package tracking app displays a list orders of a customer (or parcels) with order details such as Parcel id, Parcel status, Estimated Time of Arrival, Pickup location, Parcel Notes, Sender etc., to User.
+API Endpoint: https://my.api.mockaroo.com/orders.json?key=e49e6840
 
 # How to install:
 
-1. Clone the Project.
-2. Install npm.
-3. Open the project in Visual Studio Code.
-4. Run the command npm start to start the server.
-5. The App will be served http://localhost:3000/
+* git clone https://github.com/Radharamesh/trackingapp.git
+* cd trackingapp
+* npm install
+* npm start
 
-## User Manual:
-
-1. This is the Welcome page of the App.
-
-<img src = "Docs/Screenshot 2020-11-08 at 17.03.12.png" width = "500">
+Visit the website : https://tracking-app-411c4.web.app
 
 
-- Go to Parcel page, if you want to see all the parcels.
-2. This is the Parcels page.
-<img src = "Docs/Screenshot 2020-11-08 at 17.04.18.png" width = "500">
-
-- Enter Parcel id, if you want to see details of that particular parcel. 
-<img src = "Docs/Screenshot 2020-11-08 at 17.03.42.png" width = "500">
-
-3. This is the Parcel details page.
-<img src = "Docs/Screenshot 2020-11-08 at 17.03.55.png" width = "500">
-
-4. This is the About page of the App.
-
-<img src = "Docs/Screenshot 2020-11-08 at 17.04.08.png" width = "500">
-
-5. This is the Contact page of the App.
-<img src = "Docs/Screenshot 2020-11-08 at 17.04.26.png" width = "500">
